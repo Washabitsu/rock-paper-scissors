@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game_mechanics.js"></script>
+</head>
+<body>
+    <div class="Header dislay-center" >
+        <h1>Thor : Ragnarok - The Game</h1>
+    </div>
+    <div class="dislay-center flex-direction-column" id="Game">
+        <h2>Choose your character!</h3>
+        <div class="dislay-center heroes-container" >
+            <div class="heroes"><img src="./assets/images/thor.jpg"height="100%" alt="Thor" onclick="Game(1)"></div>
+            <div class="heroes"><img src="./assets/images/hela.jpg"height="100%" alt="Hela" onclick="Game(0)"></div>
+            <div class="heroes"><img src="./assets/images/hulk.jpg"height="100%" alt="Hulk" onclick="Game(2)"></div>
+        </div>
+        <div class="dislay-center flex-direction-column" >
+            <h1 >Score</h1>
+            <h1><span id="player_score">0</span>  - <span id="computer_score">0</span></h1>
+            <h1 id="round_choices"></h1>
+            <h1 id="round_result"></h1>
+        </div>
+    </div>
+    <div class="game_result" id="game_result_win">
+        <img class="result_images" src="assets/images/yes.gif" alt="">
+        <h1>Congratulations You Won</h1>
+        <img src="assets/images/celeb.gif" alt="">
+        <button onclick="Reset('game_result_win')">Play Again</button>
+    </div>
+    <div class="game_result" id="game_result_lose">
+        <img class="result_images" src="assets/images/sad.gif" alt="">
+        <h1>You Lost, It's okay</h1>
+        <button onclick="Reset('game_result_lose')">Try Again</button>
+    </div>
+</body>
+</html>

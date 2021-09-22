@@ -1,0 +1,84 @@
+body{
+    font-family: 'Skranji', cursive;
+    background-color:rgb(34, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.dislay-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header{
+    height:150px;
+    background-color:rgb(34, 30, 30);
+    margin-bottom: 80px;
+}
+
+.Header h1{
+    color: white;
+    font-size: 60px;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+#Game{
+    height:700px;
+    width:60%;
+    color: white;
+}
+
+#Game h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.heroes-container{
+    gap: 100px;
+    padding-bottom: 30px;
+}
+
+.result_images{
+    height: 500px;
+    width: 900px;
+}
+.heroes{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border-radius: 30px;
+}
+.heroes img:hover{
+    cursor: pointer;
+    border: black solid 5px;
+}
+.heroes img{
+    border-radius: 30px;
+}
+
+.game_result{
+   display: none;
+   color: white;
+}
+
+.game_result h1{
+    font-size: 50px;
+}
+.game_result{
+    height:700px;width:60%;justify-content: center;flex-direction: column;align-items: center;
+}
+
+button{
+    background-color: turquoise;
+    padding:10px 20px 10px 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;
+}
